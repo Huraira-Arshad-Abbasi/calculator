@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #1a1f24;
+    color: white;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 70%;
+    height: 100%;
+}
+.calculator > .output__box{
+    /* background-color: #ffffff; */
+    padding: .5rem;
+    border: 1px solid rgb(43, 34, 34);
+    border-radius: .2rem;
+    height: 30%;
+
+}
+.output__box > input{
+    width: 100%;
+    height: 50%;
+    font-size: 3rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: right;
+    color: white;
+}
+.output__box > h2{
+    font-size: 2rem;
+    text-align: right;
+    padding-top: 2rem;
+    
+}
+
+.calculator > .btn__box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: .2rem;
+    padding: .2rem;
+    height: 70%;
+    
+
+}
+.btn__box > button{
+    color: white;
+    background: #000;
+    border: none;
+    box-shadow: 0px 0px 12px 1px rgb(43, 34, 34);
+    font-size: larger;
+    border-radius: .5rem;
+    /* transition: all .5s; */
+}
+button:hover{
+    /* border: 1px solid rgb(255, 255, 255); */
+    background: rgb(30, 32, 34);
+}
+.history {
+    width: 30%;
+    height: 100%;
+    background: #000;
+    border-left: 4px solid rgb(55, 44, 44);
+}
+
+.history > h5{
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 4px solid rgb(55, 44, 44);
+}
+.history > ul{
+    /* height: 100%; */
+    list-style: none;
+    text-align: center;
+    padding-top: .5rem;
+    /* overflow-y: scroll; */
+
+}
+/* .history > ul::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+.history > ul::-webkit-scrollbar-thumb{
+    background-color: rgb(55, 44, 44);
+    border-radius: 2px;
+}
+.history > ul::-webkit-scrollbar-button{
+    display: none;
+} */
+.history > ul > li{
+    border-radius: .3rem;
+    margin-bottom: .5rem;
+    padding: 1rem;
+    text-align: right;
+}
+.history > ul > li:hover{
+    background-color: rgb(30, 32, 34);
+}
+.history > ul > li > p{
+    color: rgba(255, 255, 255, 0.59);
+}
+.history > ul > li > h5{
+    margin-top: 1rem;
+}
